@@ -1,0 +1,238 @@
+/* =========================================================
+   メンズヘルス診療ページ 追補スタイル
+   既存テーマ clinic_2025 のデザイントーンに合わせた追加分。
+   実装時は src/scss/page/_serviceDetail.scss への追記を想定。
+   ブレークポイント: md = max-width 960px（テーマ準拠）
+   ========================================================= */
+
+/* ---- flow（_serviceDetail.scss でコメントアウトされていた
+        オリジナルデザインを復活させたもの） ---- */
+.pg_serviceDetail_flow {
+   margin-top: 12rem;
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_flow { margin-top: 6rem; }
+}
+.pg_serviceDetail_flow_inner {
+   width: 100%;
+   max-width: 105.2rem;
+   margin: 0 auto;
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_flow_inner { padding-left: 2rem; padding-right: 2rem; }
+}
+.pg_serviceDetail_flow_box {
+   background-color: #fff;
+   padding: 8.8rem 2rem;
+   border-radius: 1rem;
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_flow_box { padding: 4rem 2rem; }
+}
+.pg_serviceDetail_flow_body { margin-top: 4rem; }
+.pg_serviceDetail_flow_list {
+   display: grid;
+   gap: 4rem;
+   width: 100%;
+   max-width: 64.2rem;
+   margin: 0 auto;
+   list-style: none;
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_flow_list { gap: 3.2rem; }
+}
+.pg_serviceDetail_flow_itemHead {
+   display: block;
+   padding: 1.2rem 2.4rem;
+   color: #fff;
+   font-size: 2rem;
+   text-align: center;
+   border-radius: 10rem;
+   font-family: var(--font-en);
+   background-image: linear-gradient(to bottom, #09AAB3, #0DACCC);
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_flow_itemHead { font-size: 2rem; padding: .8rem 2rem; }
+}
+.pg_serviceDetail_flow_itemBody {
+   font-size: 2rem;
+   text-align: center;
+   font-weight: 700;
+   margin-top: 2rem;
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_flow_itemBody { font-size: 1.6rem; margin-top: 1.6rem; }
+}
+.pg_serviceDetail_flow_itemNote {
+   display: block;
+   font-size: 1.4rem;
+   font-weight: 500;
+   margin-top: .6rem;
+   color: var(--color-text);
+}
+
+/* ---- kusuri: 薬剤カードの説明文（既存カードに desc を追加） ---- */
+.pg_serviceDetail_kusuri_itemDesc {
+   font-size: 1.3rem;
+   font-weight: 500;
+   line-height: 1.7;
+   text-align: left;
+   margin-top: 1rem;
+   color: var(--color-text);
+}
+.pg_serviceDetail_kusuri_note {
+   font-size: 1.4rem;
+   font-weight: 500;
+   margin-top: 2.4rem;
+   text-align: center;
+   color: var(--color-text);
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_kusuri_note { font-size: 1.2rem; text-align: left; }
+}
+.pg_serviceDetail_kusuri_groupHeading {
+   font-size: 2.4rem;
+   font-weight: 700;
+   margin-top: 4.8rem;
+   margin-bottom: 1.6rem;
+   padding-left: 1.6rem;
+   border-left: .4rem solid var(--color-blue);
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_kusuri_groupHeading { font-size: 1.8rem; margin-top: 3.2rem; }
+}
+
+/* ---- hikaku: 治療薬の特徴くらべ（テーマトーンの表組み） ---- */
+.pg_serviceDetail_hikaku { margin-top: 12rem; }
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_hikaku { margin-top: 6rem; }
+}
+.pg_serviceDetail_hikaku_inner {
+   width: 100%;
+   max-width: 105.2rem;
+   margin: 0 auto;
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_hikaku_inner { padding-left: 2rem; padding-right: 2rem; }
+}
+.pg_serviceDetail_hikaku_body { margin-top: 4rem; overflow-x: auto; }
+.pg_serviceDetail_hikaku_table {
+   width: 100%;
+   min-width: 64rem;
+   border-collapse: separate;
+   border-spacing: 0;
+   background-color: #fff;
+   border-radius: 1rem;
+   overflow: hidden;
+   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+   font-size: 1.6rem;
+}
+.pg_serviceDetail_hikaku_table th,
+.pg_serviceDetail_hikaku_table td {
+   padding: 1.6rem 2rem;
+   text-align: center;
+   border-bottom: 1px solid #E5E9EE;
+}
+.pg_serviceDetail_hikaku_table thead th {
+   color: #fff;
+   font-weight: 700;
+   background-color: var(--color-blue);
+}
+.pg_serviceDetail_hikaku_table tbody th {
+   background-color: #EBF8FB;
+   font-weight: 700;
+   text-align: left;
+}
+.pg_serviceDetail_hikaku_table tr:last-child th,
+.pg_serviceDetail_hikaku_table tr:last-child td { border-bottom: none; }
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_hikaku_table { font-size: 1.3rem; }
+   .pg_serviceDetail_hikaku_table th,
+   .pg_serviceDetail_hikaku_table td { padding: 1.2rem 1.2rem; }
+}
+.pg_serviceDetail_hikaku_note {
+   font-size: 1.4rem;
+   font-weight: 500;
+   margin-top: 2rem;
+   text-align: center;
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_hikaku_note { font-size: 1.2rem; text-align: left; }
+}
+
+/* ---- legal: 未承認医薬品等の法定記載 ---- */
+.pg_serviceDetail_legal { margin-top: 12rem; }
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_legal { margin-top: 6rem; }
+}
+.pg_serviceDetail_legal_inner {
+   width: 100%;
+   max-width: 105.2rem;
+   margin: 0 auto;
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_legal_inner { padding-left: 2rem; padding-right: 2rem; }
+}
+.pg_serviceDetail_legal_box {
+   background-color: #fff;
+   border: 1px solid #CFCFCF;
+   border-radius: 1rem;
+   padding: 4.8rem;
+   margin-top: 4rem;
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_legal_box { padding: 2.4rem 2rem; }
+}
+.pg_serviceDetail_legal_heading {
+   font-size: 2rem;
+   font-weight: 700;
+   text-align: center;
+}
+.pg_serviceDetail_legal_list dt {
+   font-size: 1.6rem;
+   font-weight: 700;
+   margin-top: 2.4rem;
+   padding-left: 1.2rem;
+   border-left: .3rem solid var(--color-blue);
+}
+.pg_serviceDetail_legal_list dd {
+   font-size: 1.4rem;
+   font-weight: 500;
+   line-height: 1.85;
+   margin-top: .8rem;
+   color: var(--color-text);
+}
+
+/* ---- plan: プランカード微調整（2枚構成時の幅） ---- */
+.pg_serviceDetail_plan_item.__w3 {
+   width: calc(33.33% - 2.7rem);
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_plan_item.__w3 { width: 100%; }
+}
+
+/* ---- 共通: セクション内注釈 ---- */
+.pg_serviceDetail_sectionNote {
+   font-size: 1.3rem;
+   font-weight: 500;
+   color: var(--color-text);
+   margin-top: 1.6rem;
+   text-align: center;
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_sectionNote { text-align: left; }
+}
+
+/* ---- 静的プレビュー用（実装時は不要） ---- */
+.is-previewNote {
+   position: fixed;
+   left: 1rem;
+   bottom: 1rem;
+   z-index: 999;
+   background: #2b1a24;
+   color: #fff;
+   font-size: 1.2rem;
+   padding: .6rem 1.2rem;
+   border-radius: .6rem;
+   opacity: .85;
+}
