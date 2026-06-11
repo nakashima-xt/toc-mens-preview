@@ -209,8 +209,7 @@ window.addEventListener('resize', function() {
 				<div class="pg_serviceDetail_products_inner">
 					<div class="pg_serviceDetail_products_head">
 						<div class="el_secHeading">
-							<div class="el_secHeading_main">About</div>
-							<h2 class="el_secHeading_sub">ED・早漏・男性更年期について</h2>
+							<h2 class="pg_serviceDetail_sectionHeading">ED・早漏・男性更年期について</h2>
 						</div>
 					</div>
 					<div class="pg_serviceDetail_products_body">
@@ -376,8 +375,7 @@ window.addEventListener('resize', function() {
 							続けやすいプラン。
 						</p>
 						<div class="el_secHeading">
-							<div class="el_secHeading_main">Plan</div>
-							<h2 class="el_secHeading_sub">価格・プラン</h2>
+							<h2 class="pg_serviceDetail_sectionHeading">価格・プラン</h2>
 						</div>
 					</div>
 					<div class="pg_serviceDetail_plan_body">
@@ -441,51 +439,169 @@ window.addEventListener('resize', function() {
 			</section>
 			<!-- /section-price -->
 
-			<!-- section-flow(追加) -->
-			<section class="pg_serviceDetail_flow">
-				<div class="pg_serviceDetail_flow_inner">
-					<div class="pg_serviceDetail_flow_box">
-						<div class="pg_serviceDetail_flow_head">
-							<div class="el_secHeading">
-								<div class="el_secHeading_main">Flow</div>
-								<h2 class="el_secHeading_sub">オンライン診療の流れ</h2>
-							</div>
-						</div>
-						<div class="pg_serviceDetail_flow_body">
-							<ol class="pg_serviceDetail_flow_list">
-								<li class="pg_serviceDetail_flow_item">
-									<h3 class="pg_serviceDetail_flow_itemHead">Step 1</h3>
-									<p class="pg_serviceDetail_flow_itemBody">
-										スマホから予約・問診
-										<span class="pg_serviceDetail_flow_itemNote">診療メニュー・日時を選んで予約。WEB問診は約5分で完了します。</span>
-									</p>
-								</li>
-								<li class="pg_serviceDetail_flow_item">
-									<h3 class="pg_serviceDetail_flow_itemHead">Step 2</h3>
-									<p class="pg_serviceDetail_flow_itemBody">
-										オンライン診察
-										<span class="pg_serviceDetail_flow_itemNote">医師がビデオ通話で診察し、あなたに合ったお薬をご提案します。</span>
-									</p>
-								</li>
-								<li class="pg_serviceDetail_flow_item">
-									<h3 class="pg_serviceDetail_flow_itemHead">Step 3</h3>
-									<p class="pg_serviceDetail_flow_itemBody">
-										お薬のお届け
-										<span class="pg_serviceDetail_flow_itemNote">中身の分からない梱包で、最短◯日でお届けします。【要確認】</span>
-									</p>
-								</li>
-								<li class="pg_serviceDetail_flow_item">
-									<h3 class="pg_serviceDetail_flow_itemHead">Step 4</h3>
-									<p class="pg_serviceDetail_flow_itemBody">
-										フォローアップ
-										<span class="pg_serviceDetail_flow_itemNote">2回目以降はLINEから簡単に追加のご相談・ご注文ができます。</span>
-									</p>
-								</li>
-							</ol>
-						</div>
-					</div>
-				</div>
-			</section>
+			<!-- section-flow(TOP「サービスの流れ」準拠) -->
+<section class="el_featureFlow">
+    <div class="el_featureFlow_inner">
+        <div class="el_featureFlow_ctt">
+            <div class="el_featureFlow_head">
+                <!-- secHeading -->             
+                <div class="el_secHeading">                
+                    <h2 class="pg_serviceDetail_sectionHeading">
+                        オンライン診療の流れ
+                    </h2>
+                </div>
+                <!-- /secHeading -->		 
+            </div>
+            <!-- flow -->
+            <div class="el_featureFlow_flow" id="flow">
+                <div class="el_featureFlow_flowSec">
+                    <h2 class="el_featureFlow_flowHeading">
+                        初めての方
+                    </h2>						
+                    <ol class="el_featureFlow_shosin">
+                        <li class="el_featureFlow_shosinItem">
+                            <div class="el_featureFlow_shosinItemHead">
+                                <p class="el_featureFlow_shosinItemHeadLabel">
+                                    1
+                                </p>                                
+                            </div>                            
+                            <p class="el_featureFlow_shosinItemHeading">スマホから予約・問診</p>
+                            <div class="el_featureFlow_shosinItemCard">
+                                <figure class="el_featureFlow_shosinItemFig">
+                                    <img src="assets/images/common/service_1.png" class="hp_containImg" alt="">
+                                </figure>                                                        
+                                <p class="el_featureFlow_shosinItemDesc">
+                                    スマホから予約・オンライン問診。3分で完了する簡単な問診に回答。症状や目的に合わせて、最適な検査・診療プランをご案内します。
+                                </p>
+                            </div>
+                        </li>
+                        <li class="el_featureFlow_shosinItem">
+                            <div class="el_featureFlow_shosinItemHead">
+                                <p class="el_featureFlow_shosinItemHeadLabel">
+                                    2
+                                </p>                                
+                            </div>       
+                            <p class="el_featureFlow_shosinItemHeading">オンライン診察</p>   
+                            <div class="el_featureFlow_shosinItemCard">                       
+                                <figure class="el_featureFlow_shosinItemFig">
+                                    <img src="assets/images/common/service_2.png" class="hp_containImg" alt="">
+                                </figure>                                
+                                <p class="el_featureFlow_shosinItemDesc">
+                                    医師がビデオ通話で症状や生活習慣を確認し、 必要に応じてオンライン検査キットをご提案。
+                                    <br>
+                                    治療方針を一緒に決めていきます。
+                                </p>
+                            </div>
+                        </li>
+                        <li class="el_featureFlow_shosinItem">
+                            <div class="el_featureFlow_shosinItemHead">
+                                <p class="el_featureFlow_shosinItemHeadLabel">
+                                    3
+                                </p>                                
+                            </div>                               
+                            <p class="el_featureFlow_shosinItemHeading">オンライン検査or診療後の治療開始</p>  
+                            <div class="el_featureFlow_shosinItemCard">
+                                <figure class="el_featureFlow_shosinItemFig">
+                                    <img src="assets/images/common/service_3.png" class="hp_containImg" alt="">
+                                </figure>                                                        
+                                <p class="el_featureFlow_shosinItemDesc">
+                                    症状とご希望に合わせて、適切な手法で治療を行います。ご自宅や指定場所へのお薬・注射キットの配送も可能です。
+                                </p>
+                            </div>
+                        </li>
+                        <li class="el_featureFlow_shosinItem">
+                            <div class="el_featureFlow_shosinItemHead">
+                                <p class="el_featureFlow_shosinItemHeadLabel">
+                                    4
+                                </p>                                
+                            </div>                               
+                            <p class="el_featureFlow_shosinItemHeading">フォローアップ</p>  
+                            <div class="el_featureFlow_shosinItemCard">
+                                <figure class="el_featureFlow_shosinItemFig">
+                                    <img src="assets/images/common/service_4.png" class="hp_containImg" alt="">
+                                </figure>                                                        
+                                <p class="el_featureFlow_shosinItemDesc">
+                                検査結果の見直し、治療調整、追加の処方などをオンラインで対応。初回以降の相談はすべてLINEで完結できます。
+                                </p>
+                            </div>
+                        </li>
+                    </ol>		
+                </div>
+                <div class="el_featureFlow_flowSec">
+                    <h2 class="el_featureFlow_flowHeading">
+                        2回目以降
+                    </h2>						
+                    <ol class="el_featureFlow_shosin">
+                        <li class="el_featureFlow_shosinItem">
+                            <div class="el_featureFlow_shosinItemHead">
+                                <p class="el_featureFlow_shosinItemHeadLabel">
+                                    1
+                                </p>                                
+                            </div>                            
+                            <p class="el_featureFlow_shosinItemHeading">LINEから簡単に申し込み</p>
+                            <div class="el_featureFlow_shosinItemCard">
+                                <figure class="el_featureFlow_shosinItemFig">
+                                    <img src="assets/images/common/service_5.png" class="hp_containImg" alt="">
+                                </figure>                                                        
+                                <p class="el_featureFlow_shosinItemDesc">
+                                    一度診察を受けたお薬は再診なしでLINEから購入可能。
+                                    <br>
+                                    （別のお薬は再診が必要です。）
+                                </p>
+                            </div>
+                        </li>
+                        <li class="el_featureFlow_shosinItem">
+                            <div class="el_featureFlow_shosinItemHead">
+                                <p class="el_featureFlow_shosinItemHeadLabel">
+                                    2
+                                </p>                                
+                            </div>       
+                            <p class="el_featureFlow_shosinItemHeading">                                
+                                薬・自己注射キットの
+                                <br>
+                                定期配送にも対応
+                            </p>   
+                            <div class="el_featureFlow_shosinItemCard">                       
+                                <figure class="el_featureFlow_shosinItemFig">
+                                    <img src="assets/images/common/service_6.png" class="hp_containImg" alt="">
+                                </figure>                                
+                                <p class="el_featureFlow_shosinItemDesc">
+                                    治療内容に応じた豊富なラインアップからお選びいただけます。
+                                </p>
+                            </div>
+                        </li>
+                    </ol>		
+                </div>
+                </div>
+            <!-- /flow -->       
+            <!-- btn -->
+            <div class="el_featureFlow_btn">
+                <a href="" class="el_ctaBtn">
+    <span>今すぐ予約</span>
+    <span class="el_ctaBtn_icon">
+        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.6119 6.84578V19.9534C18.6119 20.3315 18.3054 20.6381 17.9273 20.6381H2.04653C1.66848 20.6381 1.36189 20.3315 1.36189 19.9534V6.84578H18.6119ZM19.9738 5.48389H0V20.6187C0 21.3817 0.618247 22 1.38126 22H18.5926C19.3556 22 19.9738 21.3817 19.9738 20.6187V5.48389Z" fill="currentColor"/>
+            <path d="M18.5926 2.02686H16.7895V3.27534C16.7895 4.27301 15.9776 5.0849 14.9799 5.0849C13.9822 5.0849 13.1704 4.27301 13.1704 3.27534V2.02686H6.8021V3.27534C6.8021 4.27301 5.99022 5.0849 4.99254 5.0849C3.99486 5.0849 3.18298 4.27301 3.18298 3.27534V2.02686H1.38126C0.618247 2.02686 0 2.6451 0 3.40811V7.02032H19.9738V3.40811C19.9738 2.6451 19.3556 2.02686 18.5926 2.02686Z" fill="currentColor"/>
+            <path d="M4.99307 4.05295C4.56339 4.05295 4.21484 3.70441 4.21484 3.27473V0.778226C4.21484 0.348542 4.56339 0 4.99307 0C5.42275 0 5.7713 0.348542 5.7713 0.778226V3.27473C5.7713 3.70441 5.42275 4.05295 4.99307 4.05295Z" fill="currentColor"/>
+            <path d="M14.9814 4.05295C14.5517 4.05295 14.2031 3.70441 14.2031 3.27473V0.778226C14.2031 0.348542 14.5517 0 14.9814 0C15.411 0 15.7596 0.348542 15.7596 0.778226V3.27473C15.7596 3.70441 15.411 4.05295 14.9814 4.05295Z" fill="currentColor"/>
+            <path d="M8.96776 9.38843H7.26562V11.0906H8.96776V9.38843Z" fill="currentColor"/>
+            <path d="M12.71 9.38843H11.0078V11.0906H12.71V9.38843Z" fill="currentColor"/>
+            <path d="M16.456 9.38843H14.7539V11.0906H16.456V9.38843Z" fill="currentColor"/>
+            <path d="M5.22167 13.1335H3.51953V14.8357H5.22167V13.1335Z" fill="currentColor"/>
+            <path d="M8.96776 13.1335H7.26562V14.8357H8.96776V13.1335Z" fill="currentColor"/>
+            <path d="M12.71 13.1335H11.0078V14.8357H12.71V13.1335Z" fill="currentColor"/>
+            <path d="M16.456 13.1335H14.7539V14.8357H16.456V13.1335Z" fill="currentColor"/>
+            <path d="M5.22167 16.8789H3.51953V18.581H5.22167V16.8789Z" fill="currentColor"/>
+            <path d="M8.96776 16.8789H7.26562V18.581H8.96776V16.8789Z" fill="currentColor"/>
+            <path d="M12.71 16.8789H11.0078V18.581H12.71V16.8789Z" fill="currentColor"/>
+            <path d="M16.456 16.8789H14.7539V18.581H16.456V16.8789Z" fill="currentColor"/>
+        </svg>
+    </span>
+</a>               </div>
+             <!-- /btn -->
+        </div>
+    </div>
+</section>							</section>
 			<!-- /section-flow -->
 
 			<!-- section-faq(追加) -->
