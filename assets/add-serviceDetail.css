@@ -102,6 +102,79 @@
    .pg_serviceDetail_kusuri_groupHeading { font-size: 1.8rem; margin-top: 3.2rem; }
 }
 
+/* ---- cost: 費用について（DMM「診察料・配送料」準拠 / テーマトーン） ---- */
+.pg_serviceDetail_cost { margin-top: 12rem; }
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_cost { margin-top: 6rem; }
+}
+.pg_serviceDetail_cost_inner {
+   width: 100%;
+   max-width: 105.2rem;
+   margin: 0 auto;
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_cost_inner { padding-left: 2rem; padding-right: 2rem; }
+}
+.pg_serviceDetail_cost_body { margin-top: 4rem; }
+.pg_serviceDetail_cost_list {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2.4rem;
+   list-style: none;
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_cost_list { grid-template-columns: 1fr; gap: 1.6rem; }
+}
+.pg_serviceDetail_cost_item {
+   background-color: #fff;
+   border: 1px solid var(--color-blue);
+   border-radius: 1rem;
+   padding: 3.2rem 2.4rem;
+   text-align: center;
+   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+}
+.pg_serviceDetail_cost_itemLabel {
+   display: inline-block;
+   font-size: 1.6rem;
+   font-weight: 700;
+   color: #fff;
+   background-color: var(--color-blue);
+   border-radius: 10rem;
+   padding: .4rem 2rem;
+}
+.pg_serviceDetail_cost_itemPrice {
+   margin-top: 1.6rem;
+   line-height: 1.2;
+}
+.pg_serviceDetail_cost_itemPrice strong {
+   font-size: 4rem;
+   font-weight: 900;
+   color: var(--color-blue-dark);
+}
+.pg_serviceDetail_cost_itemPrice span {
+   font-size: 1.6rem;
+   font-weight: 700;
+   margin-left: .4rem;
+}
+.pg_serviceDetail_cost_itemNote {
+   font-size: 1.3rem;
+   font-weight: 500;
+   line-height: 1.7;
+   margin-top: 1.6rem;
+   color: var(--color-text);
+   text-align: left;
+}
+.pg_serviceDetail_cost_caption {
+   font-size: 1.4rem;
+   font-weight: 500;
+   margin-top: 2.4rem;
+   text-align: center;
+   color: var(--color-text);
+}
+@media screen and (max-width: 960px) {
+   .pg_serviceDetail_cost_caption { font-size: 1.2rem; text-align: left; }
+}
+
 /* ---- flow(TOPのel_featureFlow流用): 上の余白を他セクションと揃える ---- */
 .el_featureFlow {
    margin-top: 12rem;
